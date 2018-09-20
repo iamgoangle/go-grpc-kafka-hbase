@@ -11,4 +11,8 @@ prod-prepare:
 
 .PHONY: build-grpc-todo
 build-grpc-todo:
-	protoc -I. --go_out=plugins=grpc:. grpc/proto/v1/todo-service.proto
+	protoc -I. --go_out=plugins=grpc:. api/proto/v1/todo-service.proto
+
+.PHONY: build-grpc-topic
+build-grpc-topic:
+	protoc -I. --go_out=plugins=grpc:. api/proto/v1/topic.proto	

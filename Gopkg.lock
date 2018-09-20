@@ -18,6 +18,14 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:9a8618d8c6d6f050bca9a7c5e680a81a11949688c566e400adb0f5d2caff3aaf"
+  name = "github.com/iamgoangle/go-grpc-kafka"
+  packages = ["api/proto/v1"]
+  pruneopts = "UT"
+  revision = "f1239d6d98e5b4d0eac3bf76e5800a06512ad417"
+
+[[projects]]
+  branch = "master"
   digest = "1:deafe4ab271911fec7de5b693d7faae3f38796d9eb8622e2b9e7df42bb3dfea9"
   name = "golang.org/x/net"
   packages = [
@@ -113,6 +121,7 @@
   analyzer-version = 1
   input-imports = [
     "github.com/golang/protobuf/proto",
+    "github.com/iamgoangle/go-grpc-kafka/api/proto/v1",
     "golang.org/x/net/context",
     "google.golang.org/grpc",
     "google.golang.org/grpc/reflection",
